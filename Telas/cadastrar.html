@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Cadastro</title>
+    </head>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body
+        {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background: linear-gradient(135deg, #87FFD7, #51C49E);
+            
+        }
+
+        .img
+        {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 6rem;
+        }
+
+        .img img
+        {
+            width: 600px;
+        }
+
+        .container
+        {
+            max-width: 700px;
+            width: 100%;
+            background: #ffffff;
+            padding: 25px 30px;
+            border-radius:15px ;
+        }
+
+        .container .title
+        {
+            font-size: 25px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .container .title::before
+        {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 30px;
+            background: linear-gradient(135deg, #87FFD7, #51C49E);
+        }
+
+        .container form .user-detalis
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        form .user-detalis .input-box
+        {
+            margin: 20px 0 12px 0;
+            width: calc(100% / 2 - 20px);
+        }
+
+        .user-detalis .input-box .detalis
+        {
+            font-weight: 500;
+            margin-bottom:5px;
+        }
+
+        .user-detalis .input-box input
+        {
+            height: 45px;
+            width: 100%;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding-left: 15px;
+            font-size: 16px;
+        }
+
+        .user-detalis .input-box input:focus,
+        .user-detalis .input-box input:valid
+        {
+            border-color:#51C49E;
+        }
+
+        form input[type="radio"]
+        {
+            display: flex;
+        }
+
+        form .button
+        {
+            height: 45px;
+            margin: 45px 0;
+        }
+
+        form .button input
+        {
+            height: 100%;
+            width: 100%;
+            outline: none;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+            font-weight: 500;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            background: linear-gradient(135deg, #87FFD7, #51C49E);
+        }
+        a
+        {
+            display: flex;
+            position: absolute;
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            color: #fff;
+            margin-top: 5px;
+            margin-left: 14.5em;
+            text-decoration: none;
+        }
+        form .button input:hover
+        {
+            background: linear-gradient(-135deg, #87FFD7, #51C49E);
+        }
+      </style>
+
+
+    <body>
+        <div class="img">
+            <img src="Mobile login-rafiki.svg" >
+        </div>
+
+        <div class="container">
+            <div class="title">Cadastro</div>
+            <form>
+                <div class="user-detalis">
+                    <div class="input-box">
+                        <span class="detalis">Nome da Ong</span>
+                        <input type="text" placeholder="Digite seu nome da ong" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="detalis">Email</span>
+                        <input type="email" placeholder="Digite seu email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="detalis">Telefone</span>
+                        <input type="tel" placeholder="(xx) xxxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="detalis">CNPJ</span>
+                        <input type="text" placeholder="Digite o CNPJ" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="detalis">Senha</span>
+                        <input type="password" placeholder="Digite uma senha segura" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="detalis">Confirma Senha</span>
+                        <input type="password" placeholder="Digite novamente sua senha" required>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Cadastrar">
+                </div>
+
+                <div class="button">
+                    <a href="logon.html">Voltar</a>
+                    <input type="button" value="">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
